@@ -8,7 +8,7 @@ Used to create an Ubuntu 16.04 Xenial Docker image for Ansible testing.
 
 ## How to Build
 
-This image is built automatically on Docker Hub and can be obtained at XXX.
+This image is built automatically and can be obtained on [Docker Hub](https://hub.docker.com/r/jodyboucher/ubuntu1604-ansible/).
 
 Use the following instructions if you need to manually build the image:
 
@@ -17,7 +17,7 @@ Use the following instructions if you need to manually build the image:
   3. `cd` into directory.
   4. Run `docker build -t ubuntu1604-ansible .`
 
-  ## License
+## License
 
   MIT
 
