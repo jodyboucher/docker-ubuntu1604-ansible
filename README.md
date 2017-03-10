@@ -1,10 +1,10 @@
 # Docker image: Ubuntu 16.04 (Xenial) with Ansible
 
-Used to create an Ubuntu 16.04 Xenial Docker image for Ansible testing.
+Creates an Ubuntu 16.04 Xenial Docker image with Ansible for testing playbooks and roles.
 
 > **Important Note**:
 >
->The Docker image is intended for testing Ansible playbooks and roles in an isolated environment — it is not configured to provide a secure and performant environment for production use.
+>The image is intended for testing Ansible playbooks and roles in an isolated environment — it is not configured to provide a secure and performant environment for production use.
 
 ## How to Build
 
@@ -19,7 +19,7 @@ Use the following instructions if you need to manually build the image:
 
 ## License
 
-  MIT
+Licensed under the MIT Licence.  See the LICENSE file for details.
 
 ## Author Information
 
