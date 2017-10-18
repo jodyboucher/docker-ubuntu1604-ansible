@@ -3,7 +3,7 @@ MAINTAINER Jody Boucher
 
 # Install dependencies.
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends python-software-properties software-properties-common && \
+    apt-get install -y --no-install-recommends python-software-properties software-properties-common cron && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc && \
     rm -rf /usr/share/man
