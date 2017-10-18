@@ -1,13 +1,16 @@
 FROM ubuntu:16.04
 LABEL maintainer="Jody Boucher"
 
-# Install Ansible PPA
 # Update packages data
-# Install dependencies.
+# Install base dependencies.
+# Add Ansible PPA
+# Install Ansible
 # Clean up
-RUN add-apt-repository -y ppa:ansible/ansible && \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends python-software-properties software-properties-common cron && \
+    add-apt-repository -y ppa:ansible/ansible && \
     apt-get update && \
-    apt-get install -y --no-install-recommends python-software-properties software-properties-common cron ansible && \
+    apt-get install -y --no-install-recommends ansible && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* && \
